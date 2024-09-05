@@ -1,0 +1,31 @@
+.button {
+    border: 1px dashed orange;
+    background-color: inherit;
+    box-shadow: 2px 2px 5px orange;
+    transition: all ease-in 200ms;
+}
+
+.button:hover {
+    border: 1px dashed cyan;
+    box-shadow: 5px 5px 5px cyan;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button:active {
+    color: orange;
+}
+
+.small {
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.medium {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+}

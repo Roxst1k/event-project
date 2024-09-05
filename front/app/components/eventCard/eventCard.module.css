@@ -1,0 +1,47 @@
+.card {
+    min-height: 100%;
+    border: 1px dashed orange;
+    padding: 15px;
+    transition: all ease-in 200ms;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px orange;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px cyan;
+    cursor: pointer;
+    border: 1px dashed cyan;
+}
+
+.cardTitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cardTitle:first-letter {
+    text-transform: capitalize;
+}
+
+.cardDescription {
+    font-size: 18px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cardDescription:first-letter {
+    text-transform: capitalize;
+}
+
+.buttonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+

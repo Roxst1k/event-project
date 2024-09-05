@@ -1,0 +1,25 @@
+.eventsHeader {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventsTitle {
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 5px orange;
+    opacity: 0.9;
+    letter-spacing: 0.2rem;
+    transition: all ease-in 200ms;
+}
+
+.eventsTitle:hover {
+    color: black;
+    text-shadow: 2px 2px 5px cyan;
+    cursor: pointer;
+    opacity: 1;
+}
+
+

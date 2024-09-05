@@ -1,0 +1,45 @@
+.wrapper {
+    width: 50%;
+    border: 3px dashed orange;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed orange;
+    border-radius: 10px;
+    transition: all ease-in 200ms;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px dashed cyan;
+    box-shadow: 2px 2px 5px cyan;
+    transform: scale(1.1);
+}
+
+.wrapperBtn {
+    /*width: 100%;*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
