@@ -3,7 +3,7 @@ import {unstable_noStore as noStore} from "next/dist/server/web/spec-extension/u
 
 export const getAllEvents = async () => {
     noStore()
-    const response = await fetch('http://localhost:5000/events', );
+    const response = await fetch('https://event-project-app.vercel.app/events', );
     if (!response.ok) throw new Error('Error fetching posts');
     return await response.json();
 }
@@ -12,7 +12,7 @@ export const getAllEvents = async () => {
 export const getEventByID = async (id) => {
     noStore()
     try {
-        const response = await fetch(`http://localhost:5000/events/${id}`);
+        const response = await fetch(`https://event-project-app.vercel.app/events/${id}`);
         if (!response.ok) {
             throw new Error('Error deleting (event)');
         }
@@ -26,7 +26,7 @@ export const getEventByID = async (id) => {
 
 export const deleteEventByID = async (id) => {
     try {
-        const response = await fetch(`http://localhost:5000/events/${id}`, {
+        const response = await fetch(`https://event-project-app.vercel.app/events/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ export const deleteEventByID = async (id) => {
 export const updateEventByID = async (id, title, description) => {
     noStore()
     try {
-        const response = await fetch(`http://localhost:5000/events/${id}`, {
+        const response = await fetch(`https://event-project-app.vercel.app/events/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export const updateEventByID = async (id, title, description) => {
 
 export const addNewEvent = async (title, description) => {
     try {
-        const response = await fetch('http://localhost:5000/events', {
+        const response = await fetch('https://event-project-app.vercel.app/events', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ export const addNewEvent = async (title, description) => {
 export const updateViewersEventByID = async (id, name, lastName, email) => {
     noStore()
     try {
-        const response = await fetch(`http://localhost:5000/events/${id}/viewers`, {
+        const response = await fetch(`https://event-project-app.vercel.app/events/${id}/viewers`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
