@@ -2,10 +2,10 @@
   "name": "back",
   "version": "1.0.0",
   "description": "",
-  "main": "src/api/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node src/api/index.js"
+    "dev": "node index.js"
   },
   "author": "Rostislav",
   "license": "ISC",
