@@ -6,7 +6,7 @@ import {router as eventRoutes} from "./src/routes/event-routes.js";
 const PORT = process.env.PORT || 5000;
 const URL = 'mongodb+srv://roxst1k:roxst1k@cluster0.wp3mn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const corsOptions = {
-    origin: 'http://event-project-delta.vercel.app/', // Дозволяє доступ тільки з цього домену
+    origin: 'http://event-project-delta.vercel.app', // Дозволяє доступ тільки з цього домену
     optionsSuccessStatus: 200
 };
 
