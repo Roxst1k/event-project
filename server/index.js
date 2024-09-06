@@ -29,16 +29,17 @@ import {router as eventRoutes} from "./src/routes/event-routes.js";
 
 
 const app = express();
+const port = process.env.PORT || 3000;  // використовує PORT з оточення Vercel
+
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.status(200).json({
-        status: "success",
-        text: 'Hello World!'
-    })
-})
+// ваші маршрути, наприклад:
+app.get('/api', (req, res) => {
+    res.json({ message: 'API is working!' });
+});
 
-app.listen(5000, (err) => {
-    err ? console.log(err) : console.log('Server running on port 5000.');
-})
+// запускаємо сервер
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
 
