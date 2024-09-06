@@ -13,10 +13,14 @@ const corsOptions = {
 
 const app = express();
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use(express.json());
-app.use(eventRoutes)
+// app.use(eventRoutes)
+
+app.get('/', (req, res) => {
+    res.status(200).send('success');
+})
 
 mongoose.connect(URL)
     .then(() => console.log('Connected to MongoDB'))
