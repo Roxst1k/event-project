@@ -31,7 +31,7 @@ import {router as eventRoutes} from "./src/routes/event-routes.js";
 const app = express();
 app.use(express.json());
 
-app.get("/", async (req, res) => {
+app.get("/", (req, res) => {
     res.status(200).json({
         status: "success",
         text: 'Hello World!'
