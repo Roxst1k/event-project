@@ -5,15 +5,15 @@ import {router as eventRoutes} from "./src/routes/event-routes.js";
 
 const PORT = process.env.PORT || 5000;
 const URL = 'mongodb+srv://roxst1k:roxst1k@cluster0.wp3mn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-const corsOptions = {
-    origin: 'http://localhost:3000', // Дозволяє доступ тільки з цього домену
-    optionsSuccessStatus: 200
-};
+// const corsOptions = {
+//     origin: 'http://localhost:3000', // Дозволяє доступ тільки з цього домену
+//     optionsSuccessStatus: 200
+// };
 
 
 const app = express();
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(eventRoutes)
